@@ -15,10 +15,14 @@ header {
     color: #fff;
 }
 
-header .branding img {
-    width: 50px;
-    border-radius: 50%;
-}
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+  }
+
+
 
 nav ul {
     list-style: none;
