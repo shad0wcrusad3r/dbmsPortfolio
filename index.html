@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="profile.png" alt="Profile Picture">
+            <h1>John Doe</h1>
+            <p>Semester 5, Computer Science and Engineering</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#learning">Learning & Assignments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <h2>Aspiring Database Administrator</h2>
+        <p>Welcome to my DBMS portfolio! Explore my journey in database management systems, assignments, and projects.</p>
+        <button onclick="window.location.href='#contact'">Contact Me</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a database enthusiast with a strong passion for designing efficient and scalable database systems.</p>
+        <h3>Skills Overview</h3>
+        <ul>
+            <li>Database Design and Modeling</li>
+            <li>Relational Algebra</li>
+            <li>Normalization and Transaction Processing</li>
+            <li>SQL and PL/SQL Programming</li>
+        </ul>
+        <p>Fun Fact: I love solving puzzles and designing efficient workflows!</p>
+    </section>
+
+    <section id="learning">
+        <h2>Learning & Assignments</h2>
+        <article>
+            <h3>ER Model and Relational Algebra</h3>
+            <p>Designed an ER model for a library system, implementing structural constraints and many-to-many relationships efficiently.</p>
+        </article>
+        <article>
+            <h3>SQL</h3>
+            <p>Created and queried a SQL database, using aggregate functions, nested queries, and correlated queries to analyze data.</p>
+        </article>
+        <article>
+            <h3>Normalization and Transaction Processing</h3>
+            <p>Normalized a database to 3NF and implemented ACID-compliant transaction processing.</p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com">GitHub</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="mailto:example@domain.com">Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
