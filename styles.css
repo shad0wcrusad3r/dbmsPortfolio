@@ -1,62 +1,86 @@
 body {
-    background-color: #15385d; /* Sets the background color */
-    color: #ffffff; /* Ensures text is readable against the dark background */
-    font-family: 'Poppins', sans-serif; /* Use a modern, rounded font */
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Use bold weights for headings */
+/* Header Styles */
+header {
+    background-color: #15385d;
+    color: #ffffff;
+    padding: 20px;
 }
 
-p, a, li {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6; /* Better readability */
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.branding img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    margin-right: 20px;
+}
+
+.branding .info {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.intro {
+    padding: 40px;
+    text-align: center;
+    background-color: #eaf2f8;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
 }
 
 button {
     background-color: #1e5a8b;
     color: #ffffff;
     border: none;
-    border-radius: 8px; /* Rounder buttons */
+    border-radius: 8px;
     padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-    background-color: #2e6da8; /* Slightly brighter hover color */
+    background-color: #2e6da8;
 }
 
-input, textarea {
-    border: 1px solid #2e6da8;
-    border-radius: 8px; /* Rounded input fields */
+footer {
+    text-align: center;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
+    background-color: #15385d;
+    color: #ffffff;
 }
-
-a {
-    color: #f1c40f; /* Highlighted link color */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Styles for images */
-img {
-    border-radius: 50%; /* Makes the image round */
-    display: block; /* Center-aligns if used with margin auto */
-    max-width: 150px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    border: 3px solid #ffffff; /* Optional: Adds a white border around the image */
-    margin: 20px auto; /* Centers the image horizontally */
-}
-
-/* Add Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
