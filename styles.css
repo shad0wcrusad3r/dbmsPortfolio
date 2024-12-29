@@ -84,3 +84,20 @@ footer {
     background-color: #15385d;
     color: #ffffff;
 }
+
+/* CSS for resizing images for readability */
+img {
+  display: block;
+  max-width: 100%; /* Responsive width */
+  width: 600px;    /* Fixed width for readability */
+  height: auto;    /* Maintain aspect ratio */
+  margin: 20px auto; /* Center images with spacing */
+  border: 1px solid #ccc; /* Optional border for emphasis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Optional: Specific adjustments for Learning and Assignments section */
+.learning-section img {
+  width: 650px; /* Slightly larger for diagrams */
+}
+
