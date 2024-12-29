@@ -101,3 +101,21 @@ img {
   width: 650px; /* Slightly larger for diagrams */
 }
 
+#stenq h3 {
+    font-size: 1.2rem;
+}
+
+.tables {
+    display: flex;
+    gap: 20px;
+}
+
+.tables img {
+    width: 48%;
+}
+
+.sql-queries img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
