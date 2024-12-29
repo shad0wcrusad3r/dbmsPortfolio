@@ -19,7 +19,8 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#reflections">Reflections</a></li>
                 <li><a href="#learning">Learning & Assignments</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -28,11 +29,20 @@
 
     <section id="home" class="intro">
         <h2>Aspiring Database Administrator</h2>
-        <p>Welcome to my DBMS portfolio! Explore my journey in database management systems, assignments, and projects.</p>
+        <p>
+            The portfolio is a result of academic work and real-world experience that has been backed with a good grasp of database management systems.
+            It points out competencies in database system areas including database schema design, relational algebra, SQL programming, and normalization,
+            as well as practical work such as course assignments. 
+        </p> 
+        <p>
+            Wonderfully clear and easy to understand, the site provides detailed information about
+            the creator’s processes and showcases innovative approaches to building complex and large databases. It is informative, with opportunities
+            for interaction and personalization, thus creating a collaboration space.
+        </p>
         <button onclick="window.location.href='#contact'">Contact Me</button>
     </section>
 
-    <section id="about">
+    <section id="aboutme">
         <h2>About Me</h2>
         <p>I am a database enthusiast with a strong passion for designing efficient and scalable database systems.</p>
         <h3>Skills Overview</h3>
@@ -45,21 +55,137 @@
         <p>Fun Fact: I love solving puzzles and designing efficient workflows!</p>
     </section>
 
-    <section id="learning">
-        <h2>Learning & Assignments</h2>
-        <article>
-            <h3>ER Model and Relational Algebra</h3>
-            <p>Designed an ER model for a library system, implementing structural constraints and many-to-many relationships efficiently.</p>
-        </article>
-        <article>
-            <h3>SQL</h3>
-            <p>Created and queried a SQL database, using aggregate functions, nested queries, and correlated queries to analyze data.</p>
-        </article>
-        <article>
-            <h3>Normalization and Transaction Processing</h3>
-            <p>Normalized a database to 3NF and implemented ACID-compliant transaction processing.</p>
-        </article>
+    <section id="reflections">
+        <h2>Reflections</h2>
+        <h3>Thoughts on the DBMS Course</h3>
+        <ul>
+            <li><b>Effective Data Management:</b> DBMS equips us with the ability to efficiently manage, structure, and access data, an essential skill in the digital age.</li>
+            <li><b>Enhanced Problem-Solving:</b> Grasping database concepts fosters logical reasoning and strengthens problem-solving capabilities.</li>
+            <li><b>Career Prospects:</b> Mastery of DBMS paves the way for roles in fields such as database management, software engineering, and data analysis.</li>
+            <li><b>Practical Applications:</b> Databases underpin numerous modern systems, including e-commerce platforms, healthcare management, banking, and more.</li>
+        </ul>
+        <h3>Purpose of Learning DBMS</h3>
+        <ul>
+            <li>To gain insights into the storage, organization, and application of data in various domains.</li>
+            <li>To develop proficiency in SQL and database architecture, crucial for careers in tech and data science.</li>
+            <li>To design scalable and efficient systems capable of processing substantial datasets.</li>
+            <li>To enhance analytical thinking for improved decision-making based on data.</li>
+        </ul>
+        <h3>Benefits of Using DBMS</h3>
+        <ul>
+            <li><b>Data Accuracy:</b> Ensures data remains consistent and error-free throughout the system.</li>
+            <li><b>Enhanced Security:</b> Provides tools to prevent unauthorized access and safeguard information.</li>
+            <li><b>Integrity Maintenance:</b> Establishes rules that preserve data quality and authenticity.</li>
+            <li><b>Collaborative Access:</b> Allows multiple users to interact with data simultaneously while maintaining its integrity.</li>
+            <li><b>Performance Optimization:</b> Improves query execution and data storage for superior efficiency.</li>
+        </ul>
+        <h3>How This Project Took Shape</h3>
+        <p>
+            To design the ER diagram, I utilized the online Canva tool. It provided an intuitive platform to identify entities and their attributes after analyzing the given pharmacy database.
+            For converting the ER model into a relational schema, Dbdiagram.io proved to be a highly effective tool. It simplified the process by generating tables and attributes with minimal effort.
+            Finally, I executed the queries using Oracle SQL Developer, ensuring practical implementation and testing.
+        </p>
     </section>
+
+    <section id="learning-assignments">
+        <h2>Learning and Assignments</h2>
+      
+        <h3>ER Model and Relational Algebra</h3>
+        <p>
+          This is an Entity-Relationship (ER) diagram used for database modeling. Its purpose is to represent the structure and relationships between various entities in a business context, such as employees, departments, projects, and dependents. The goal of the diagram is to serve as a blueprint for designing a relational database that organizes and manages data efficiently.
+        </p>
+        <img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p1.png" alt="ER Diagram">
+        <h4>Key Components and Their Goals:</h4>
+        <ul>
+          <li><strong>Entities:</strong> Represented by rectangles (e.g., EMPLOYEE, DEPARTMENT, PROJECT, DEPENDENT), these are the objects or concepts that store data.</li>
+          <li><strong>Attributes:</strong> Represented by ovals (e.g., Fname, Salary, Location), these define the properties of each entity.</li>
+          <li><strong>Relationships:</strong> Represented by diamonds (e.g., WORKS_FOR, MANAGES, WORKS_ON), these define the connections between entities.</li>
+        </ul>
+        <h4>Features:</h4>
+        <ul>
+          <li><strong>Defined Entity Types and Relationships:</strong> Identified key entities such as EMPLOYEE, DEPARTMENT, PROJECT, and DEPENDENT, and established relationships like WORKS_FOR, MANAGES, and WORKS_ON to represent real-world connections.</li>
+          <li><strong>Implemented Structural Constraints:</strong> Enforced cardinality and participation constraints (e.g., 1:N, M:N) to ensure accurate representation of relationships and data integrity.</li>
+        </ul>
+        <h4>Challenges and Solutions:</h4>
+        <p><strong>Challenge:</strong> Designing Many-to-Many Relationships</p>
+        <p><strong>Problem:</strong> Representing relationships like WORKS_ON (between EMPLOYEE and PROJECT) while maintaining data consistency and allowing for attributes such as Hours.</p>
+        <p><strong>Solution:</strong> Introduced a relationship entity with attributes and appropriate primary and foreign keys during the relational schema design phase to capture the details and eliminate redundancy.</p>
+        <p><strong>Challenge:</strong> Handling Recursive Relationships</p>
+        <p><strong>Problem:</strong> Modeling recursive relationships such as SUPERVISION where an EMPLOYEE supervises other employees.</p>
+        <p><strong>Solution:</strong> Added self-referencing relationships with clear cardinality constraints (1:N) to represent the hierarchy.</p>
+        <h4>Reflection:</h4>
+        <p>
+          Working with the employee database has been an enriching experience, helping me understand entity relationships and their interconnections, such as EMPLOYEE, DEPARTMENT, and PROJECT through WORKS_FOR, MANAGES, and WORKS_ON. It highlighted the importance of clear cardinalities and constraints like primary and foreign keys for maintaining data integrity. I also gained valuable insights into designing recursive relationships (e.g., SUPERVISION) and weak entities (e.g., DEPENDENT), enhancing my ability to handle complex database requirements. This project improved my skills in creating normalized, robust database schemas suited for real-world applications.
+        </p>
+      
+        <h3>SQL (Structured Query Language)</h3>
+        <h4>Purchase Order Database</h4>
+        <p>
+          This database represents a simple sales management system, consisting of four tables: CUSTOMERS, ORDERS, LINEITEMS, and ITEMS. It organizes customer information, orders placed by customers, the items included in those orders, and their details. The relationships between tables are defined using primary and foreign keys, ensuring referential integrity.
+        </p>
+        <img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p2.jpg" alt="Purchase Order Database">
+      
+        <h4>DDL (Data Definition Language):</h4>
+        <ul>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p3.jpg" alt="Create Tables"> - Define the structure of the database tables (CUSTOMERS, ORDERS, LINEITEMS, ITEMS).</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p4.jpg" alt="Alter Tables"> - Modify the structure of existing tables, for example, adding a new column.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p5.jpg" alt="Drop Tables"> - Delete tables from the database.</li>
+        </ul>
+      
+        <h4>DML (Data Manipulation Language):</h4>
+        <ul>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p6.jpg" alt="Insert Data"> - Add records to the database tables.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p7.jpg" alt="Update Data"> - Modify existing records in the database.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p8.jpg" alt="Delete Data"> - Remove records from the database.</li>
+        </ul>
+      
+        <h4>Aggregate Functions:</h4>
+        <ul>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p9.jpg" alt="SUM"> - Calculate the total value of items ordered.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p10.jpg" alt="COUNT"> - Count the number of orders placed by a customer.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p11.jpg" alt="MIN/MAX"> - Find the most expensive order item.</li>
+        </ul>
+      
+        <h4>Nested Queries:</h4>
+        <ul>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p12.jpg" alt="Sub-Queries"> - Use a query within another query, for example, to find customers who have ordered specific items.</li>
+          <li><img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p13.jpg" alt="Nested Aggregates"> - Calculate the total order value for customers with the highest number of orders.</li>
+        </ul>
+        <h4>Reflection:</h4>
+        <p>
+          Working with the orders database enhanced my understanding of SQL by teaching me how to use DDL commands to structure and organize data, and DML commands for inserting, updating, and deleting records. I gained insights into using aggregate functions like SUM, AVG, and COUNT for data analysis, as well as how to work with nested and correlated subqueries for complex queries. Implementing structured queries like joins enabled me to retrieve and analyze data from multiple tables. This experience improved my SQL skills and deepened my understanding of relational databases, preparing me for more complex tasks in database management and analysis.
+        </p>
+      
+        <h3>Normalization and Transaction Processing</h3>
+        <h4>Normalization</h4>
+        <img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p14.jpg" alt="Normalization">
+        <img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p15.jpg" alt="Normalization">
+        <p>
+          Normalization is the process of organizing a database to minimize redundancy and dependency by dividing tables into smaller, more manageable pieces. It ensures that data is stored efficiently and consistently. The key goals of normalization include:
+        </p>
+        <ul>
+          <li>Eliminating redundancy: Reducing duplicate data across tables.</li>
+          <li>Improving data integrity: Ensuring that changes in one place propagate correctly across the database.</li>
+          <li>Simplifying queries: Making the data structure easier to query and maintain.</li>
+        </ul>
+      
+        <h4>Transaction Processing</h4>
+        <img src="https://github.com/shad0wcrusad3r/dbmsPortfolio/p16.jpg" alt="Transaction Processing">
+        <p>
+          Transaction processing ensures the integrity and reliability of operations within a database, particularly in multi-user environments. A transaction is a sequence of operations performed as a single logical unit of work, adhering to the ACID properties:
+        </p>
+        <ul>
+          <li><strong>Atomicity:</strong> Ensures all parts of a transaction are completed; otherwise, none are executed.</li>
+          <li><strong>Consistency:</strong> Maintains the database's state before and after a transaction.</li>
+          <li><strong>Isolation:</strong> Ensures transactions do not interfere with each other.</li>
+          <li><strong>Durability:</strong> Guarantees that once a transaction is committed, its changes are permanent.</li>
+        </ul>
+        <h4>Reflection:</h4>
+        <p>
+          Learning about normalization and transaction processing has been invaluable in understanding how databases ensure efficiency and reliability. Normalization taught me to organize data by eliminating redundancy, maintaining consistency, and simplifying queries through well-structured tables and normal forms. Transaction processing provided insights into maintaining data integrity through ACID properties, ensuring reliable operations in multi-user environments. Concepts like rollbacks and locking mechanisms highlighted how databases handle failures and prevent conflicts. Overall, these concepts enhanced my appreciation for the balance of efficiency, reliability, and accuracy in database design.
+        </p>
+      </section>
+      
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -72,11 +198,6 @@
             <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <div class="social-links">
-            <a href="https://github.com">GitHub</a>
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="mailto:example@domain.com">Email</a>
-        </div>
     </section>
 
     <footer>
