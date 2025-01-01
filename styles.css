@@ -157,3 +157,31 @@ img[src="p13.jpg"] {
     width:600px;
     height:360px;
 }
+
+/* General styling for the social-links container */
+.social-links {
+    display: flex;
+    gap: 15px; /* Space between the links */
+    justify-content: center; /* Center align the links */
+    margin-top: 20px;
+}
+
+/* Styling for each link */
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust box size */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 20px; /* Rounded edges */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.social-links a:hover {
+    background-color: #0073e6; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
