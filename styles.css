@@ -185,3 +185,22 @@ img[src="p13.jpg"] {
     color: white; /* White text on hover */
 }
 
+.sql-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+.sql-gallery li {
+    flex: 1 0 30%; /* Adjust width of each image */
+    margin: 5px;
+}
+.sql-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
