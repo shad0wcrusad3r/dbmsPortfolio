@@ -119,3 +119,19 @@ img {
     margin-bottom: 15px;
 }
 
+img[src="p3.jpg"],
+img[src="p4.jpg"],
+img[src="p5.jpg"],
+img[src="p6.jpg"],
+img[src="p7.jpg"],
+img[src="p8.jpg"],
+img[src="p9.jpg"],
+img[src="p10.jpg"],
+img[src="p11.jpg"],
+img[src="p12.jpg"],
+img[src="p13.jpg"] {
+    width: 335px; /* Adjust to desired width */
+    height: 266px; /* Adjust to maintain the aspect ratio */
+}
+
+
