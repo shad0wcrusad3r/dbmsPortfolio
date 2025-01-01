@@ -136,7 +136,6 @@ img[src="p13.jpg"] {
 
 /* Specific Resizing for stenq Section Images */
 #stenq img[src="i1.jpg"],
-#stenq img[src="i2.jpg"],
 #stenq img[src="i3.jpg"],
 #stenq img[src="i4_.jpg"],
 #stenq img[src="i5_.jpg"],
@@ -152,4 +151,9 @@ img[src="p13.jpg"] {
 #stenq img[src="i15.jpg"] {
   width: 300px; /* Reduced width */
   height: auto; /* Maintain aspect ratio */
+}
+
+#stenq img[src="i2.jpg"]{
+    width:600px;
+    height:360px;
 }
