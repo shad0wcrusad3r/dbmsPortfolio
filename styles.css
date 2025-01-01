@@ -134,4 +134,22 @@ img[src="p13.jpg"] {
     height: 266px; /* Adjust to maintain the aspect ratio */
 }
 
-
+/* Specific Resizing for stenq Section Images */
+#stenq img[src="i1.jpg"],
+#stenq img[src="i2.jpg"],
+#stenq img[src="i3.jpg"],
+#stenq img[src="i4_.jpg"],
+#stenq img[src="i5_.jpg"],
+#stenq img[src="i6_.jpg"],
+#stenq img[src="i7_.jpg"],
+#stenq img[src="i8_.jpg"],
+#stenq img[src="i9.jpg"],
+#stenq img[src="i10.jpg"],
+#stenq img[src="i11.jpg"],
+#stenq img[src="i12.jpg"],
+#stenq img[src="i13.jpg"],
+#stenq img[src="i14.jpg"],
+#stenq img[src="i15.jpg"] {
+  width: 300px; /* Reduced width */
+  height: auto; /* Maintain aspect ratio */
+}
