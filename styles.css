@@ -149,7 +149,7 @@ img[src="p13.jpg"] {
 #stenq img[src="i13.jpg"],
 #stenq img[src="i14.jpg"],
 #stenq img[src="i15.jpg"] {
-  width: 300px; /* Reduced width */
+  width: 540px; /* Reduced width */
   height: auto; /* Maintain aspect ratio */
 }
 
