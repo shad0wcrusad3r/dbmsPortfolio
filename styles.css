@@ -203,4 +203,46 @@ img[src="p13.jpg"] {
     border-radius: 5px;
 }
 
+/* Make the nav bar fixed for easy navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between links */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Adjust text color */
+    font-weight: 600; /* Adjust font weight */
+    font-family: 'Poppins', sans-serif; /* Optional: Keep it consistent with the header */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Adjust hover color */
+}
+
+/* Add some top margin to content sections to avoid overlap */
+body {
+    margin-top: 60px; /* Adjust based on nav bar height */
+}
+
 
